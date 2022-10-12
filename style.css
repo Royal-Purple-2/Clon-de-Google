@@ -1,0 +1,136 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --color-fondo: #fff;
+  --color-de-btn-acceder: #1a73e8;
+  --color-btn-acceder-hvr: #1b66c9;
+  --color-btn-gris: #f8f9fa;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--color-fondo);
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  height: 20vh;
+}
+header nav {
+  flex-direction: column;
+  padding: 10px;
+  flex-basis: 1;
+  margin: 10px;
+}
+
+.nav-items {
+  padding: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#logo {
+  width: 400px;
+  height: 200px;
+}
+footer {
+  margin-top: 30rem;
+  display: flex;
+  justify-content: space-around;
+  height: 20vh;
+  align-items: flex-end;
+}
+
+footer nav {
+  display: inline-block;
+  align-items: flex-end;
+  flex-direction: row;
+}
+footer nav a {
+  align-items: flex-end;
+  padding: 10px;
+}
+/* footer span {
+  display: block;
+  width: 100%;
+  margin-right: 100px;
+} */
+
+button {
+  margin-left: 20px;
+  border: none;
+  width: 9rem;
+  height: 2.6rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.btn-search:hover {
+  border: 1px solid grey;
+}
+
+#logo img {
+  width: 375px;
+  height: 150px;
+}
+
+#btn-acceder {
+  background-color: var(--color-de-btn-acceder);
+  color: #fff;
+  width: 7rem;
+  height: 2.6rem;
+}
+#btn-acceder:hover {
+  background-color: var(--color-btn-acceder-hvr);
+}
+
+form {
+  padding: 1em;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 5px;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+
+#icono-busq {
+  position: absolute;
+  left: 1rem;
+  /* padding-left: 0.5rem; */
+  border-left: 0.5rem;
+  top: calc(35%);
+  margin-left: 10px;
+}
+#icono-voz {
+  position: absolute;
+  right: 1rem;
+  padding: 0.5em;
+}
+
+#input-search {
+  width: 35rem;
+  height: 2.5rem;
+  border-color: gray;
+  border-radius: 20px;
+}
